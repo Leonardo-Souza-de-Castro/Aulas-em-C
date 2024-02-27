@@ -43,11 +43,38 @@ int main(){
     //     printf("o tamanho do array eh: %d \n", tamanho);
     // }
 
-    int t = 10;
-    int a[t];
+    // int t = 10;
+    // int a[t];
 
-    initArray(a,t);
-    // printArray(a,t);
-    printf("A soma de todos os termos eh igual ah: %d \n", soma(a, t));
+    // initArray(a,t);
+    // // printArray(a,t);
+    // printf("A soma de todos os termos eh igual ah: %d \n", soma(a, t));
+
+    //Matrizes
+
+    int m[5][5]; //definição de matriz //Para criar matrizes ele aloca espaços sequenciais como os arrays podendo ser acessado assim também
+    int i;
+    int j;
+
+    for ( i = 0; i < 5; i++)
+    {
+        for ( j = 0; j < 5; j++)
+        {
+            m[i][j] = i*j;
+        }
+        
+    }
+    
+
+    for ( i = 0; i < 5; i++)
+    {
+        for ( j = 0; j < 5; j++)
+        {
+            printf("%d", m[i][j]);
+        }
+        printf("\n");
+        
+    }
+
     
 }
