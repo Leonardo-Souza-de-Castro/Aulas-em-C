@@ -11,4 +11,6 @@ int main(){
 
     printf("%d\n", p[0]);
     printf("%d\n", p[1]);
+
+    free(p); //função q dessaloca a memória da variavel p para não travar o programa
 }
