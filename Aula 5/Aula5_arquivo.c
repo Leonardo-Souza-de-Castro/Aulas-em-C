@@ -74,4 +74,12 @@ int main(){
 
     FILE *f = fopen("teste", "wb"); //wb -> write binarie
     fwrite(ps,t,sizeof(Pessoa),f); //recebe o array, o tamanho, o tamanho do tipo de dado e o arquivo
+    fclose(f);
+
+    Pessoa p[2];
+    FILE *a = fopen("teste", "rb"); //rb -> read binarie
+    fread(ps,t,sizeof(Pessoa),a); //recebe o array, o tamanho, o tamanho do tipo de dado e o arquivo
+    fclose(a);
+
+
 }
